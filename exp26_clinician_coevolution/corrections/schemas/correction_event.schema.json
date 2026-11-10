@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "oncostate/exp26/correction_event.schema.json",
+  "title": "OncoState Experiment 2.6 correction event (immutable)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id", "patient_id", "batch_id", "clinician_id", "timestamp", "event_type", "action",
+    "correction_source", "data_mode", "model_version", "state_version_before", "state_version_after",
+    "baseline_lesion_id", "original_followup_lesion_id", "corrected_followup_lesion_id",
+    "original_prediction", "corrected_value", "original_confidence", "registration_quality", "centroid_distance",
+    "review_time_seconds", "clinician_comment", "uncertain_flag", "prev_event_sha256", "event_sha256"
+  ],
+  "properties": {
+    "event_id": {"type": "string", "pattern": "^E[0-9A-Za-z_-]+$"},
+    "patient_id": {"type": "string", "pattern": "^[A-Za-z0-9_-]+$"},
+    "batch_id": {"type": "string"},
+    "clinician_id": {"type": "string", "description": "study pseudonym of the reviewer, or ORACLE for simulated events"},
+    "session_id": {"type": ["string", "null"]},
+    "timestamp": {"type": "string"},
+    "event_type": {"enum": ["lesion_match", "lesion_status", "measurement", "segmentation_quality", "new_lesion", "disappeared_lesion", "uncertain"]},
+    "action": {"enum": ["accept", "correct", "disappeared", "new_lesion", "uncertain", "segmentation_ok", "segmentation_incorrect", "measurement", "status"]},
+    "correction_source": {"enum": ["clinician", "oracle"]},
+    "data_mode": {"enum": ["real", "synthetic"]},
+    "ui_action_token": {"type": ["string", "null"], "description": "required for clinician events: proves a UI user action created the event"},
+    "model_version": {"type": "string"},
+    "state_version_before": {"type": "integer", "minimum": 0},
+    "state_version_after": {"type": "integer", "minimum": 1},
+    "review_item": {"type": ["string", "null"]},
+    "baseline_lesion_id": {"type": ["string", "null"]},
+    "original_followup_lesion_id": {"type": ["string", "null"]},
+    "corrected_followup_lesion_id": {"type": ["string", "null"]},
+    "original_prediction": {"type": ["object", "string", "null"]},
+    "corrected_value": {"type": ["object", "string", "number", "null"]},
+    "measurement_side": {"enum": ["baseline", "followup", null]},
+    "original_confidence": {"type": ["number", "null"]},
+    "registration_quality": {"type": ["object", "null"]},
+    "centroid_distance": {"type": ["number", "null"]},
+    "centroid_distance_mm": {"type": ["number", "null"]},
+    "review_time_seconds": {"type": ["number", "null"], "minimum": 0},
+    "clinician_comment": {"type": ["string", "null"], "maxLength": 2000},
+    "uncertain_flag": {"type": "boolean"},
+    "prev_event_sha256": {"type": ["string", "null"]},
+    "event_sha256": {"type": "string"}
+  },
+  "allOf": [
+    {"not": {"anyOf": [
+      {"required": ["gt"]}, {"required": ["gt_pairs"]}, {"required": ["reference"]}, {"required": ["is_correct"]},
+      {"required": ["match_correct"]}, {"required": ["oracle_label"]}, {"required": ["true_match"]}
+    ]}},
+    {"if": {"properties": {"correction_source": {"const": "oracle"}}},
+     "then": {"properties": {"clinician_id": {"const": "ORACLE"}}}},
+    {"if": {"properties": {"correction_source": {"const": "clinician"}}},
+     "then": {"properties": {"clinician_id": {"not": {"const": "ORACLE"}}, "ui_action_token": {"type": "string", "minLength": 8}},
+              "required": ["ui_action_token"]}}
+  ]
+}

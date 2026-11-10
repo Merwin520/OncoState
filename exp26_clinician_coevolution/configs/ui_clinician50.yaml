@@ -1,0 +1,14 @@
+# Experiment 2.6 final clinician study: 50 real cases, one patient per page.
+data_mode: real
+model_version: V0
+expected_patient_count: 50
+bundle: data/clinician_50/clinician_safe
+review_batch: clinician50
+randomize_case_order: true
+order_seed_namespace: exp26-clinician50-study-seed-20261002
+per_reviewer_stores: true
+events_dir: exports/clinician50/events
+states_dir: exports/clinician50/states
+sessions_dir: exports/clinician50/sessions
+versions_dir: exports/versions
+banner: "Research use only - not for clinical decision-making."

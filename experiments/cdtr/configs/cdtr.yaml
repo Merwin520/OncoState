@@ -1,0 +1,25 @@
+# CDT-R configuration (energy, calibration, verifier, evidence-query policies).
+source_bundle: exp26_clinician_coevolution/data/real/exp22_longitudinal_ct   # Exp 2.2 setting-A lesions, registered centroids
+splits:            # Exp 2.6 code-fixed patient batches (make_batches, SPLIT_SEED); no model training
+  calibration: validation_gate_1        # 80: conformal quantile only
+  policy_validation: [development, correction_batch_1]   # 75: debugging / sanity of policies; no parameter is fitted here
+  test: future_eval_1                   # 144: run once with this frozen config
+energy:
+  gate_mm: 30.0                         # repository V0 gate (energy argmin == V0, verified 299/299)
+conformal:
+  alpha_primary: 0.10
+  alpha_sensitivity: [0.05, 0.20]       # reported, never selected on test
+verifier:
+  time_limit_s: 30.0
+  energy_tol: 1.0e-6
+  max_nogood_cuts: 5
+review:
+  tool: reference_identity_lookup       # SIMULATED review: reveals the reference partner of one follow-up lesion. NOT clinician review.
+  cost_per_lesion: 1.0
+  budgets_per_patient: [0, 0.1, 0.25, 0.5, 1.0, 2.0, 4.0]    # global budget K = rate x n_patients, matched across policies
+  primary_budget_per_patient: 0.5
+policies: [v0_no_review, random, v0_confidence, set_ambiguity, cdtr]
+random_seeds: [0, 1, 2, 3, 4]
+bootstrap:
+  n: 2000
+  seed: 20261011

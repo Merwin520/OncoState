@@ -1,0 +1,4 @@
+collection_id: ispy1
+clinical_file: I-SPY-1-All-Patient-Clinical-and-Outcome-Data.xlsx
+# I-SPY1 source visit names (clinical spreadsheet LD columns) -> canonical V0..V3. Source terms are kept in metadata.
+visit_map: {"MRI LD Baseline": V0, "MRI LD 1-3dAC": V1, "MRI LD InterReg": V2, "MRI LD PreSurg": V3}

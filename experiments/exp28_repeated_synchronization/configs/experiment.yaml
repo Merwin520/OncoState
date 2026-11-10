@@ -1,0 +1,9 @@
+# Experiment 2.8 — repeated longitudinal synchronization of the same patient state.
+# Paths are relative to the package root unless an environment variable overrides them.
+work_dir_env: EXP28_WORK            # large/temporary files live OUTSIDE the package
+work_dir_default: ../../../exp28_work
+max_cache_gb: 10                    # HARD limit for any temporary imaging cache
+header_fetch_bytes: 262144          # ranged read of a DICOM SEG header (official FTV lives in private tags)
+header_fetch_retry_bytes: 2097152
+bootstrap_resamples: 2000
+seed: 20261001

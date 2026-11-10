@@ -1,0 +1,47 @@
+# Real-data configuration (Experiment 2.2 CT export; not distributed).
+# OncoState Experiment 2.6 — clinician-guided co-evolution of longitudinal lesion matching.
+# All paths are relative to the package root (exp26_clinician_coevolution/). No machine-specific absolute paths.
+
+experiment_name: exp26_clinician_coevolution
+random_seed: 20261001
+source_model_version: V0
+primary_endpoint: future_unseen_patient_lesion_matching_f1
+
+paths:
+  bundle: data/real/exp22_longitudinal_ct          # cohort bundle (cases/ + gt_hidden/ + manifest.json)
+  batch_manifest: configs/batches.example.yaml
+  events: exports/events                      # clinician correction events (correction_events.jsonl)
+  states: exports/states                      # immutable patient-state versions
+  versions: exports/versions_real                  # model-version registry
+  results: exports/results_real                    # tables and figure data
+  figures: figures
+
+data_mode: real        # synthetic | real   (written into every state and event)
+
+v0:
+  type: registered_centroid_hungarian       # repository MatchingNode, frozen defaults (Experiment 2.2)
+  gate_mm: 30.0
+
+matching_features: [dist_mm, dist_over_diam, abs_log_vol_ratio, rel_diam_diff, log_vol_bl, rank_fu, rank_bl,
+                    ratio_second_fu, ratio_second_bl, reg_residual_mm, v0_match]
+
+repair_model:
+  type: pairwise_logistic
+  C: 1.0
+  class_weight: balanced
+  threshold: 0.5
+  max_distance_mm: 100.0
+  min_examples_per_class: 5
+
+bootstrap_iterations: 2000
+
+non_regression_thresholds:
+  min_delta_f1: 0.0              # candidate must not be worse on the point estimate
+  noninferiority_margin: 0.02    # and the patient-bootstrap lower 95% CI of delta F1 must be >= -0.02
+  max_metric_drop: 0.03          # precision / recall / change accuracy / burden accuracy
+  max_rate_increase: 0.02        # false-new / false-disappeared rates
+  max_net_regressions: 0         # previously-correct matches broken <= matches fixed
+
+
+ui:
+  config: configs/ui.yaml

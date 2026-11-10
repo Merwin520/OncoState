@@ -1,0 +1,14 @@
+collection_id: ispy2
+idc_version_audited: v24
+source_doi: 10.7937/tcia.d8z0-9t85
+timepoint_field: StudyDescription
+timepoint_map: {ISPY2_MRI_T0: T0, ISPY2_MRI_T1: T1, ISPY2_MRI_T2: T2, ISPY2_MRI_T3: T3}
+timepoint_meaning:
+  T0: pre-treatment
+  T1: early treatment (~3 weeks of regimen 1)
+  T2: inter-regimen
+  T3: post-neoadjuvant, pre-surgery
+patient_id_prefix: ISPY2-
+clinical_file: ISPY2-Imaging-Cohort-1-Clinical-Data.xlsx
+measurement_file: Multi-feature-MRI-NACT-Data.xlsx
+source_base_url: https://www.cancerimagingarchive.net/wp-content/uploads/

@@ -1,0 +1,27 @@
+# Decision validity under incomplete and revised longitudinal evidence. Fixed before the evaluation run (pre-specified analysis plan).
+cohort: [correction_batch_1, validation_gate_1, future_eval_1]   # the 274 locked CT patients
+external: [development]                                          # 25 non-locked patients: added to every calibration pool, smoke tests
+energy: {gate_mm: 30.0}                                          # repository V0 energy, unchanged
+folds: from_exp1                                                 # reuse the Exp 1 patient folds (experiments/cdtr_exp1_state)
+verifier: {time_limit_s: 30.0, energy_tol: 1.0e-6, max_nogood_cuts: 5}
+
+acceptance:
+  alpha_primary: 0.10
+  alpha_sensitivity: [0.05, 0.20]
+  strata:                                    # evidence-quality strata; test-time observable, reference-free
+    variable: registration_residual_mm       # median NN distance of registered baseline to follow-up centroids (exp22_adapter)
+    cut_primary_mm: 30.0                     # = the repository matching gate (not tuned)
+    cut_sensitivity_mm: [20.0, 40.0, 50.0]
+    tertiles_sensitivity: true               # tertiles of the calibration pool's residuals (label-free)
+  min_calibration: auto                      # stratum pool must have n >= ceil((1-alpha)/alpha); otherwise ABSTAIN
+  expanded_alpha_grid: [0.005, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10]   # control C1 (matched acceptance)
+
+revision:
+  alpha: 0.10
+  real_events: R03                           # the one real reader (50 clinician-review patients)
+  fact_order: lesion_id                      # baseline facts by baseline id, then follow-up-only facts by follow-up id
+  sim_seeds: [0, 1, 2, 3, 4]                 # retrospective replay of reference-derived facts (SIMULATED), random order per seed
+  sim_error_seed: 0                          # erroneous-revision-then-retraction replay (SIMULATED)
+
+bootstrap: {n: 10000, seed: 20261023}
+noninferiority_margin_pp: 5.0

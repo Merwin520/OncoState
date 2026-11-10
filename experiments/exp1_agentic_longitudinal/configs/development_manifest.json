@@ -1,0 +1,1148 @@
+{
+  "split": "development",
+  "purpose": "tool selection only, not final validation",
+  "frozen": true,
+  "seed": 20260917,
+  "subject_ids": [
+    "06eb61b839",
+    "11b9842e0a",
+    "2b24d49505",
+    "2b44928ae1",
+    "37bc1b6433",
+    "3988c7f88e",
+    "5072d348b2",
+    "53c3bce66e",
+    "555d6702c9",
+    "5759d9ff2a",
+    "73278a4a86",
+    "757b505cfd",
+    "76dc611d6e",
+    "7ef605fc8d",
+    "7f5144f962",
+    "871c14878f",
+    "a4a042cf4f",
+    "a8f15eda80",
+    "b1a59b315f",
+    "b73ce398c3",
+    "cb70ab3756",
+    "dc5e819e18",
+    "e64770ac6b",
+    "e96ed478da"
+  ],
+  "patients": [
+    {
+      "patient_id": "06eb61b839",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/06eb61b839_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/06eb61b839_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/06eb61b839_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/06eb61b839_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "11b9842e0a",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/11b9842e0a_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/11b9842e0a_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/11b9842e0a_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/11b9842e0a_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "2b24d49505",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/2b24d49505_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/2b24d49505_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/2b24d49505_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/2b24d49505_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "2b44928ae1",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/2b44928ae1_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/2b44928ae1_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/2b44928ae1_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/2b44928ae1_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "37bc1b6433",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/37bc1b6433_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/37bc1b6433_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/37bc1b6433_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/37bc1b6433_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "3988c7f88e",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/3988c7f88e_BL_img_BL_img_00.nii.gz",
+        "Longitudinal-CT/inputsTr/3988c7f88e_BL_img_BL_img_01.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/3988c7f88e_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/3988c7f88e_BL_mask_BL_img_00.nii.gz"
+          },
+          {
+            "series": "01",
+            "path": "Longitudinal-CT/inputsTr/3988c7f88e_BL_mask_BL_img_01.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/3988c7f88e_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "5072d348b2",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/5072d348b2_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/5072d348b2_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/5072d348b2_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/5072d348b2_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "53c3bce66e",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/53c3bce66e_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/53c3bce66e_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/53c3bce66e_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/53c3bce66e_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "555d6702c9",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/555d6702c9_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/555d6702c9_FU_img_FU_img_00.nii.gz",
+        "Longitudinal-CT/inputsTr/555d6702c9_FU_img_FU_img_01.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/555d6702c9_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/555d6702c9_FU_mask_FU_img_00.nii.gz"
+          },
+          {
+            "series": "01",
+            "path": "Longitudinal-CT/targetsTr/555d6702c9_FU_mask_FU_img_01.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "5759d9ff2a",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/5759d9ff2a_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/5759d9ff2a_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/5759d9ff2a_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/5759d9ff2a_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "73278a4a86",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/73278a4a86_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/73278a4a86_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/73278a4a86_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/73278a4a86_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "757b505cfd",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/757b505cfd_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/757b505cfd_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/757b505cfd_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/757b505cfd_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "76dc611d6e",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/76dc611d6e_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/76dc611d6e_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/76dc611d6e_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/76dc611d6e_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "7ef605fc8d",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/7ef605fc8d_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/7ef605fc8d_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/7ef605fc8d_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/7ef605fc8d_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "7f5144f962",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/7f5144f962_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/7f5144f962_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/7f5144f962_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/7f5144f962_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "871c14878f",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/871c14878f_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/871c14878f_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/871c14878f_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/871c14878f_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "a4a042cf4f",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/a4a042cf4f_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/a4a042cf4f_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/a4a042cf4f_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/a4a042cf4f_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "a8f15eda80",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/a8f15eda80_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/a8f15eda80_FU_img_FU_img_00.nii.gz",
+        "Longitudinal-CT/inputsTr/a8f15eda80_FU_img_FU_img_01.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/a8f15eda80_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/a8f15eda80_FU_mask_FU_img_00.nii.gz"
+          },
+          {
+            "series": "01",
+            "path": "Longitudinal-CT/targetsTr/a8f15eda80_FU_mask_FU_img_01.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "b1a59b315f",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/b1a59b315f_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/b1a59b315f_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/b1a59b315f_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/b1a59b315f_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "b73ce398c3",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/b73ce398c3_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/b73ce398c3_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/b73ce398c3_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/b73ce398c3_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "cb70ab3756",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/cb70ab3756_BL_img_BL_img_00.nii.gz",
+        "Longitudinal-CT/inputsTr/cb70ab3756_BL_img_BL_img_01.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/cb70ab3756_FU_img_FU_img_00.nii.gz",
+        "Longitudinal-CT/inputsTr/cb70ab3756_FU_img_FU_img_01.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/cb70ab3756_BL_mask_BL_img_00.nii.gz"
+          },
+          {
+            "series": "01",
+            "path": "Longitudinal-CT/inputsTr/cb70ab3756_BL_mask_BL_img_01.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/cb70ab3756_FU_mask_FU_img_00.nii.gz"
+          },
+          {
+            "series": "01",
+            "path": "Longitudinal-CT/targetsTr/cb70ab3756_FU_mask_FU_img_01.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "dc5e819e18",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/dc5e819e18_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/dc5e819e18_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/dc5e819e18_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/dc5e819e18_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "e64770ac6b",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/e64770ac6b_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/e64770ac6b_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/e64770ac6b_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/e64770ac6b_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    },
+    {
+      "patient_id": "e96ed478da",
+      "baseline_ct": [
+        "Longitudinal-CT/inputsTr/e96ed478da_BL_img_BL_img_00.nii.gz"
+      ],
+      "followup_ct": [
+        "Longitudinal-CT/inputsTr/e96ed478da_FU_img_FU_img_00.nii.gz"
+      ],
+      "available_gt_for_evaluation": {
+        "baseline": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/inputsTr/e96ed478da_BL_mask_BL_img_00.nii.gz"
+          }
+        ],
+        "followup": [
+          {
+            "series": "00",
+            "path": "Longitudinal-CT/targetsTr/e96ed478da_FU_mask_FU_img_00.nii.gz"
+          }
+        ]
+      },
+      "burden_stratum": "unknown_not_read_before_evaluation",
+      "organ_summary": "unknown_not_read_before_evaluation",
+      "split_source": {
+        "release": "Longitudinal-CT/inputsTr + targetsTr public training release",
+        "patientsTr_file": "experiments/exp1_agentic_longitudinal/models/longiseg/AutoPETTrainerPretrained1e3__nnUNetResEncUNetLPlans__3d_fullres/patientsTr.json",
+        "patientsTr_sha256": "33c70aca39f9ba8bd969a0cf33eae0a20a9dd25ad3544793e581569c1660bd09"
+      },
+      "selection_reason": "seed=20260917; proportional patient-level CT series-count stratum; all series assigned together"
+    }
+  ],
+  "scans": [
+    {
+      "subject_id": "06eb61b839",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/06eb61b839_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "06eb61b839",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/06eb61b839_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "11b9842e0a",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/11b9842e0a_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "11b9842e0a",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/11b9842e0a_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "2b24d49505",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/2b24d49505_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "2b24d49505",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/2b24d49505_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "2b44928ae1",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/2b44928ae1_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "2b44928ae1",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/2b44928ae1_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "37bc1b6433",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/37bc1b6433_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "37bc1b6433",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/37bc1b6433_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "3988c7f88e",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/3988c7f88e_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "3988c7f88e",
+      "timepoint": "baseline",
+      "series": "01",
+      "ct_path": "Longitudinal-CT/inputsTr/3988c7f88e_BL_img_BL_img_01.nii.gz"
+    },
+    {
+      "subject_id": "3988c7f88e",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/3988c7f88e_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "5072d348b2",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/5072d348b2_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "5072d348b2",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/5072d348b2_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "53c3bce66e",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/53c3bce66e_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "53c3bce66e",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/53c3bce66e_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "555d6702c9",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/555d6702c9_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "555d6702c9",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/555d6702c9_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "555d6702c9",
+      "timepoint": "followup",
+      "series": "01",
+      "ct_path": "Longitudinal-CT/inputsTr/555d6702c9_FU_img_FU_img_01.nii.gz"
+    },
+    {
+      "subject_id": "5759d9ff2a",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/5759d9ff2a_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "5759d9ff2a",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/5759d9ff2a_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "73278a4a86",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/73278a4a86_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "73278a4a86",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/73278a4a86_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "757b505cfd",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/757b505cfd_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "757b505cfd",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/757b505cfd_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "76dc611d6e",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/76dc611d6e_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "76dc611d6e",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/76dc611d6e_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "7ef605fc8d",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/7ef605fc8d_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "7ef605fc8d",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/7ef605fc8d_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "7f5144f962",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/7f5144f962_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "7f5144f962",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/7f5144f962_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "871c14878f",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/871c14878f_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "871c14878f",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/871c14878f_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "a4a042cf4f",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/a4a042cf4f_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "a4a042cf4f",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/a4a042cf4f_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "a8f15eda80",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/a8f15eda80_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "a8f15eda80",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/a8f15eda80_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "a8f15eda80",
+      "timepoint": "followup",
+      "series": "01",
+      "ct_path": "Longitudinal-CT/inputsTr/a8f15eda80_FU_img_FU_img_01.nii.gz"
+    },
+    {
+      "subject_id": "b1a59b315f",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/b1a59b315f_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "b1a59b315f",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/b1a59b315f_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "b73ce398c3",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/b73ce398c3_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "b73ce398c3",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/b73ce398c3_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "cb70ab3756",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/cb70ab3756_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "cb70ab3756",
+      "timepoint": "baseline",
+      "series": "01",
+      "ct_path": "Longitudinal-CT/inputsTr/cb70ab3756_BL_img_BL_img_01.nii.gz"
+    },
+    {
+      "subject_id": "cb70ab3756",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/cb70ab3756_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "cb70ab3756",
+      "timepoint": "followup",
+      "series": "01",
+      "ct_path": "Longitudinal-CT/inputsTr/cb70ab3756_FU_img_FU_img_01.nii.gz"
+    },
+    {
+      "subject_id": "dc5e819e18",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/dc5e819e18_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "dc5e819e18",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/dc5e819e18_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "e64770ac6b",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/e64770ac6b_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "e64770ac6b",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/e64770ac6b_FU_img_FU_img_00.nii.gz"
+    },
+    {
+      "subject_id": "e96ed478da",
+      "timepoint": "baseline",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/e96ed478da_BL_img_BL_img_00.nii.gz"
+    },
+    {
+      "subject_id": "e96ed478da",
+      "timepoint": "followup",
+      "series": "00",
+      "ct_path": "Longitudinal-CT/inputsTr/e96ed478da_FU_img_FU_img_00.nii.gz"
+    }
+  ],
+  "eligible_patient_count": 299,
+  "excluded": [
+    {
+      "patient_id": "006f52e910",
+      "reason": "target_subject"
+    }
+  ],
+  "locked_test_declarations": [],
+  "locked_test_access": "No test images/labels accessed; only project split declaration files checked; no local locked-test membership found",
+  "stratification": {
+    "method": "proportional CT-series availability strata",
+    "quotas": {
+      "(2, 2)": 1,
+      "(1, 2)": 2,
+      "(1, 1)": 20,
+      "(2, 1)": 1,
+      "(3, 1)": 0,
+      "(2, 3)": 0,
+      "(1, 3)": 0,
+      "(3, 3)": 0,
+      "(3, 2)": 0
+    },
+    "burden_count_organ": "Unavailable without annotation access; GT restricted to evaluation, so these strata were not fabricated."
+  },
+  "all_series_grouped_by_patient": true
+}

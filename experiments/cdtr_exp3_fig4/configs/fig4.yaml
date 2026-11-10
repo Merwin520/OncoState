@@ -1,0 +1,10 @@
+# CDT-R with the updated (gated) matcher, 144 unseen patients.
+# Energy: gated updated matcher (-logit p; argmin == gated matcher 224/224). Calibration: 80 gate patients (as for the V0 energy).
+energy: {gate_mm: 0.0}
+conformal: {alpha_primary: 0.10}
+verifier: {time_limit_s: 30.0, energy_tol: 1.0e-6, max_nogood_cuts: 5}
+review: {tool: reference_identity_lookup, cost_per_lesion: 1.0, budgets_per_patient: [0, 0.1, 0.25, 0.5, 1.0, 2.0, 4.0], primary_budget_per_patient: 0.5}
+policies: [no_review, model_confidence, set_ambiguity, cdtr, random]
+random_seeds: [0, 1, 2, 3, 4]
+scoring: [engine, exp30_rule]     # engine = repository RECIST engine (CDT-R's decision function); exp30_rule = response rule of the matcher-update analysis
+bootstrap: {n: 2000, seed: 20261011}

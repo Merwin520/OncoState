@@ -1,0 +1,41 @@
+{
+ "seed": 20261011,
+ "n_boot": 2000,
+ "folds": "outputs/longitudinal_forecasting/analysis/folds.csv",
+ "ridge_alphas": "logspace(-3,3,13)",
+ "gbm": {
+  "max_depth": [
+   2,
+   3
+  ],
+  "learning_rate": [
+   0.03,
+   0.1
+  ],
+  "max_iter": 300,
+  "random_state": 0,
+  "inner_cv": 3
+ },
+ "enet": {
+  "l1_ratio": 0.5,
+  "C": [
+   0.01,
+   0.03,
+   0.1,
+   0.3,
+   1
+  ],
+  "inner_cv": 3,
+  "solver": "saga",
+  "random_state": 0
+ },
+ "conformal_level": 0.9,
+ "perturbation_primary": 1.6,
+ "perturbation_sensitivity": [
+  0.5,
+  0.8,
+  1.25,
+  2.0
+ ],
+ "memory_model": "qwen3.5-9b (local vLLM, temperature 0, seed 0)"
+}
